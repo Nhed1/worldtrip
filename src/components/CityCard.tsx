@@ -11,7 +11,10 @@ export default function CityCard() {
             Reino Unido
           </Text>
         </Box>
-        <Avatar name="Ryan Florence" src="https://bit.ly/ryan-florence" />
+        <Avatar
+          name="Londres"
+          src="https://images.unsplash.com/photo-1543832923-44667a44c804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1044&q=80"
+        />
       </Flex>
     </Flex>
   );

@@ -1,4 +1,5 @@
 import { Flex, Text, Image, Box, Center } from "@chakra-ui/react";
+import SlideContent from "./SlideContent";
 // swipper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -18,28 +19,13 @@ export default function Swipper() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Center h={200} position="relative">
-            <Image src="./images/europe.jpg" objectFit="cover" />
-            <Text position="absolute" color="white" fontSize="26">
-              Europe
-            </Text>
-          </Center>
+          <SlideContent imageUrl="europe" text="Europa" />
         </SwiperSlide>
         <SwiperSlide>
-          <Center h={200} position="relative">
-            <Image src="./images/europe.jpg" objectFit="cover" />
-            <Text position="absolute" color="white" fontSize="26">
-              Brazil
-            </Text>
-          </Center>
+          <SlideContent imageUrl="north-america" text="America do Norte" />
         </SwiperSlide>
         <SwiperSlide>
-          <Center h={200} position="relative">
-            <Image src="./images/europe.jpg" objectFit="cover" />
-            <Text position="absolute" color="white" fontSize="26">
-              Australia
-            </Text>
-          </Center>
+          <SlideContent imageUrl="asia" text="Ásia" />
         </SwiperSlide>
       </Swiper>
     </Box>
